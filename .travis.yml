@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t mmzaki/react -f Dockerfile.dev .
 script:
-  - docker run -e CI=true mmzaki/react npm run test -- --converage
+  - docker run -e CI=true mmzaki/react npm run test -- --coverage
